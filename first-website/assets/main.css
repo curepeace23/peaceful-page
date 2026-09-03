@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+    font-size:20px;
+}
+
+
+p {
+    background-color:aquamarine;
+    color:rgb(0, 0, 0);
+
+    /* the border shorthand property expects 3 values for the border-width, border-style, and border-color */
+    border:10px dotted deeppink;
+
+    /* padding is internal spacing for our elements */
+    padding:50px;
+
+    /* margin is external spacing around our elements */
+    margin:50px;
+}
+
+.banner {
+    background-color:cornflowerblue;
+    text-align: center;
+}
+
+img {
+    max-width:100%;
+}
+
