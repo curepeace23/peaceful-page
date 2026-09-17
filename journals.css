@@ -1,0 +1,33 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(emo-background.jpg);
+}
+
+.banner {
+    font-family: cursive;
+    color: red;
+}
+
+h3 {
+    font-family: monospace;
+    color: aqua;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.journal-entry {
+    width: 50%;
+    display: inline-block;
+    font-family: inherit;
+    margin-left: 40px;
+    margin-top: 20px;
+    border: 40px solid transparent;
+    border-image: url(passion-v2/assets/snowflake-frame-white.png) 80 round;
+    padding: 20px;
+}

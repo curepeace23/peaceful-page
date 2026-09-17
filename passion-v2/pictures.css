@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 380px;
+    display: block;
+    margin: 0 auto;
+    border: 40px solid transparent;
+    border-image: url(assets/snowflake-frame-white.png) 80 round;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+    text-align: center;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border: 40px solid transparent;
+    border-image: url(assets/snowflake-frame-white.png) 80 round;
+    font-family: monospace;
+    padding: 20px;
+}
+
+.banner {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+
+a,
+a:visited,
+a:active {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}

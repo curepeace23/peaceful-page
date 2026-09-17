@@ -1,3 +1,22 @@
 body {
-    background-color: rgb(164, 161, 204);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(emo-background.jpg);
+}
+
+.banner {
+    font-family: cursive;
+    color: red;
+}
+
+a,
+a:visited,
+a:active {
+    color: white;
+}
+
+a:hover {
+    color: aqua;
 }
