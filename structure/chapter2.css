@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.panel img {
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.a1 img {
+    display: flex;
+    height: 600px;
+    top: 20px;
+    left: -200px;
+}
+
+p {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.a2 img {
+    height: 600px;
+    right: 100px;
+    bottom: -600px;
+}
+
+.text {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.line1 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+}
+
+.reveal summary {
+    font-family: cursive;
+    font-size: 20px;
+}

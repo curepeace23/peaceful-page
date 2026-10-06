@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.panel img {
+    position: relative;
+    margin: 20px;
+}
+
+.a1 img {
+    height: 800px;
+    top: 20px;
+    left: 20px;
+}
+
+.line1 {
+    position: relative;
+    top: 352px;
+    right: 50px;
+}
+
+p {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.a2 img {
+    height: 300px;
+    right: -600px;
+    bottom: -1000px;
+}
+
+.line2 {
+    position: relative;
+    bottom: -1035px;
+    left: -800px;
+}

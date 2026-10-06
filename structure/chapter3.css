@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel img {
+    margin: 20px;
+}
+
+.a1 img {
+    height: 300px;
+}
+
+.line1 {
+    position: static;
+    text-align: left;
+    margin-left: 20px;
+}
+
+p {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.a2 img {
+    height: 400px;
+}
+
+.a3 img {
+    height: 500px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
