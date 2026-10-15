@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-image: url(sprites/school-at-night.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.textbox {
+    background: rgba(255, 159, 199, 0.716);
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10;
+    bottom: 20px;
+    left: 50%;
+    margin: 0;
+    width: 600px;
+    height: 100px;
+    border: 4px solid rgb(194, 55, 134);
+}
+
+.welcome {
+    font-family: monospace;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30ch;
+    padding: 20px;
+    text-align: left;
+    animation: typing 1.5s steps(18) forwards;
+}
+
+.line-thanks,
+.line-love {
+    display: none;
+    animation: typing 1.5s steps(60) forwards;
+}
+
+body:has(.sprite-left:focus) .line-choose {
+    display: none;
+}
+
+body:has(.sprite-left:focus) .line-thanks {
+    display: block;
+}
+
+body:has(.sprite-right:focus) .line-choose {
+    display: none;
+}
+
+body:has(.sprite-right:focus) .line-love {
+    display: block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40ch;
+    }
+}
+
+.sprite-left,
+.sprite-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sprite-left img,
+.sprite-right img {
+    display: block;
+    position: relative;
+    height: 90vh;
+    width: auto;
+    max-width: none;
+}
+
+.sprite-left img {
+    animation: move-left .8s linear;
+}
+
+.sprite-right img {
+    margin-left: 30px;
+    animation: move-right .8s ease-out;
+}
+
+.sprite-left:hover {
+    transform: scaleX(-1);
+}
+
+.sprite-right:hover {
+    transform: scaleX(-1);
+}
+
+.sprite-right {
+    transition: translate 1s ease-in;
+}
+
+.sprite-left {
+    cursor: pointer;
+    outline: none;
+}
+
+.container:has(.sprite-left:focus) .sprite-right {
+    translate: 100vw 0;
+}
+
+.sprite-left {
+    transition: translate 1s ease-in;
+}
+
+.sprite-right {
+    cursor: pointer;
+    outline: none;
+}
+
+.container:has(.sprite-right:focus) .sprite-left {
+    translate: -100vw 0;
+}
+
+body:has(.sprite-left:focus) .line-thanks {
+    display: block;
+}
+
+@keyframes move-left {
+    0% {
+        left: -500px;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes move-right {
+    0% {
+        right: -500px;
+    }
+
+    100% {
+        right: 10%;
+    }
+}
+
+.replay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    padding: 10px 20px;
+    background: rgba(255, 159, 199, 0.716);
+    border-radius: 20px;
+    color: white;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+.replay:hover {
+    background: rgba(255, 0, 0, 0.811);
+}

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+body {
+    background-image: url(sprites/enter-screen.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background: lightpink;
+    padding: 20px;
+    font-family: cursive;
+    border-radius: 50%;
+    animation: pulse 2s infinite alternate;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1:hover {
+    background-color: blue;
+}
+
+h1:active {
+    scale: .9;
+}
+
+@keyframes pulse {
+    0% {
+        background: lightpink;
+        scale: 1;
+    }
+
+    100% {
+        background: hotpink;
+        scale: 1.4;
+    }
+}

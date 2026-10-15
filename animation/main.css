@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.box {
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    /* animation-name: test;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+
+    /* with the animation shorthand, the first time value is always duration, and the second is always delay */
+    animation: test 5s 2s infinite ease-in-out alternate both;
+}
+
+@keyframes test {
+    0% {
+        background-color: crimson;
+        top: 0%;
+    }
+
+    50% {
+        background: rebeccapurple;
+    }
+
+    100% {
+        background-color: chartreuse;
+        top: 200px;
+    }
+}
+
+.container {
+    background: lightcyan;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    background: lightsalmon;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        background: lightsalmon;
+        scale: 1;
+    }
+
+    100% {
+        background: hotpink;
+        scale: 1.4;
+    }
+}
+
+.square {
+    background-color: lightsalmon;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.mover {
+    background: lightsalmon;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation:
+        move 4s infinite linear,
+        grow 2s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes grow {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 2;
+    }
+}
+
+.changer {
+    background: lightsalmon;
+    height: 100px;
+    width: 100px;
+    transition:
+        background .5s ease-in-out,
+        border-radius 2s,
+        rotate 1s,
+        all ;
+}
+
+.changer:hover {
+    background: hotpink;
+    border-radius: 100%;
+    rotate: 180deg;
+}
+
+.changer:active {
+    scale: .9;
+}
