@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: rgb(210, 211, 253);
+    transition: background .3s;
+}
+
+.dark {
+    background: rgb(181, 184, 253);
+}
+
+.menu {
+    background: rgb(107, 138, 252);
+    font-size: 150%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+
+    transition: right .3s linear, background .3s;
+}
+
+.active {
+    right: 0;
+}
+
+.gear {
+    background: rgb(107, 138, 252);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+
+    transition: rotate .3s linear, background .3s;
+}
+
+.spin {
+    rotate: 180deg;
+}
+
+.glow {
+    background: rgba(255, 82, 169, 0.854);
+}

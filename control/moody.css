@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background: black;
+    color: whitesmoke;
+    transition: background 0.4s, color 0.4s;
+}
+
+.container {
+    position: fixed;
+    pointer-events: none;
+}
+
+.panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 70vh;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}
+
+.panel.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.panel img {
+    height: 120%;
+    width: auto;
+    display: block;
+}
+
+.active {
+    transform: translate(-50%, -50%);
+}
+
+.img-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.img-btn img {
+    display: block;
+    width: 5vw;
+    height: auto;
+
+}
+
+.stage {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8vh 0;
+    gap: 6vh;
+    pointer-events: none;
+    z-index: 5;
+}
+
+p {
+    text-align: center;
+}
+
+
+.box {
+    width: 80vw;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.btn-row {
+    display: flex;
+    gap: 4vw;
+    pointer-events: auto;
+}
+
+.reveal-text {
+    margin: 0;
+    font-size: 1.5rem;
+    transform: translateX(100vw);
+    opacity: 0;
+    color: inherit;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.reveal-text.show {
+    transform: none;
+    opacity: 1;
+}
+
+
+body.light {
+    background: whitesmoke;
+    color: black;
+}
+
+.img-btn:hover img {
+    filter: invert(1) hue-rotate(180deg);
+}

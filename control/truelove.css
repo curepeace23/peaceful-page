@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.3;
+    }
+}
+
+.button {
+    position: fixed;
+    bottom: 20%;
+    left: 45%;
+}
+
+.container.dark {
+    background: black;
+    height: 100vh;
+}
+
+.hotspot-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.hotspot-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}

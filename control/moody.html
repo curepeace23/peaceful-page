@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>truelove</title>
+    <link rel="stylesheet" href="moody.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="stage">
+            <div class="box">
+                <p class="reveal-text" id="reveal-text">a transcendental state of matter</p>
+            </div>
+
+            <div class="btn-row">
+                <button class="img-btn" id="vanish-btn"><img src="assets/plus-sign.png" alt="toggle image"></button>
+                <button class="img-btn" id="light-btn"><img src="assets/plus-sign.png" alt="light mode"></button>
+                <button class="img-btn" id="text-btn"><img src="assets/plus-sign.png" alt="show text"></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="panel active">
+                <img src="assets/moodypanel.png">
+            </div>
+        </div>
+
+        <script>
+            const panel = document.querySelector(".panel");
+            const textEl = document.getElementById("reveal-text");
+
+            document.getElementById("vanish-btn").addEventListener("click", () => {
+                panel.classList.toggle("active");
+            });
+
+            document.getElementById("light-btn").addEventListener("click", () => {
+                document.body.classList.toggle("light");
+            });
+
+            document.getElementById("text-btn").addEventListener("click", () => {
+                textEl.classList.toggle("show");
+            });
+        </script>
+    </body>
+
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
